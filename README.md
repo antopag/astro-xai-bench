@@ -44,8 +44,10 @@ src/training/     # training loop and callbacks
 src/evaluation/   # evaluation metrics and benchmark orchestration
 notebooks/        # exploratory analysis and paper figures
 scripts/          # CLI entry points
-paper/            # LaTeX manuscript
+tests/            # unit and smoke tests
 ```
+
+The LaTeX manuscript is maintained separately and is not part of this repository.
 
 ## License
 

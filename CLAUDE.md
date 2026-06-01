@@ -34,8 +34,8 @@ Target journal: Astronomy & Computing or MNRAS.
 - `configs/` – YAML experiment definitions
 - `notebooks/` – exploration and paper figures only, no core logic
 - `scripts/` – CLI entry points
-- `paper/` – LaTeX source
 - `tests/` – pytest
+- `paper/` – LaTeX source (maintained locally; excluded from the repository via .gitignore)
 
 ## Data
 - Only public datasets: PLAsTiCC, ZTF BTS, ELAsTiCC
