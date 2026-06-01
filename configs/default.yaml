@@ -1,0 +1,72 @@
+seed: 42                       # legacy single-seed runs
+seeds: [42, 123, 456, 789, 1024]  # multi-seed benchmark (run_final_table.py)
+device: "cuda"
+
+data:
+  dataset: "plasticc"
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  representation: "gaf"        # 'timeseries' or 'gaf'
+  gaf_image_size: 224
+  test_size: 0.2
+  val_size: 0.1
+  num_workers: 4
+  batch_size: 32
+
+models:
+  random_forest:
+    enabled: true
+    n_estimators: 500
+
+  xgboost:
+    enabled: true
+    n_estimators: 500
+    max_depth: 8
+    learning_rate: 0.1
+
+  lstm:
+    enabled: true
+    hidden_size: 128
+    n_layers: 2
+    bidirectional: true
+    epochs: 100
+    lr: 0.001
+
+  cnn1d:
+    enabled: true
+    epochs: 100
+    lr: 0.001
+
+  cnn2d:
+    enabled: true
+    epochs: 100
+    lr: 0.001
+
+  vit:
+    enabled: true
+    model_name: "vit_small_patch16_224"
+    pretrained: true
+    epochs: 50
+    lr: 0.0001
+    weight_decay: 0.01
+
+  ensemble:
+    enabled: true
+    meta_learner: "logistic"
+
+training:
+  early_stopping_patience: 10
+  scheduler: "cosine"
+  gradient_clip: 1.0
+
+xai:
+  gradcam: true
+  shap: true
+  attention_rollout: true
+  faithfulness_perturbations: 100
+  n_samples_explain: 50       # number of test samples to explain
+
+output:
+  results_dir: "results"
+  figures_dir: "paper/figures"
+  tables_dir: "paper/tables"

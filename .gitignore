@@ -1,0 +1,30 @@
+data/raw/
+data/processed/
+results/
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+dist/
+build/
+.ruff_cache/
+*.pt
+*.pth
+*.ckpt
+wandb/
+.ipynb_checkpoints/
+
+# pass-2 additions
+*.bak
+*.bak_*
+*.tex.bak*
+
+# Manuscript and revision docs live on Google Drive / Overleaf, NOT in the
+# code repository (paper is under anonymous review).
+paper/
+HANDOFF_*.md
+REVISION_*.md
+
+# logs and scratch helpers
+*.log
+scripts/_*
