@@ -28,3 +28,6 @@ REVISION_*.md
 # logs and scratch helpers
 *.log
 scripts/_*
+
+# Overleaf export bundles
+*_overleaf.zip

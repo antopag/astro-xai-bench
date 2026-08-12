@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+title: "astro-xai-bench: a quantitative benchmark for explainable AI in astronomical transient classification"
+message: "If you use this software, please cite both the software and the paper."
+type: software
+authors:
+  - family-names: Pagliaro
+    given-names: Antonio
+    affiliation: "INAF -- Istituto di Astrofisica Spaziale e Fisica Cosmica, Palermo, Italy"
+    email: antonio.pagliaro@inaf.it
+    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: add before the Zenodo release
+repository-code: "https://github.com/antopag/astro-xai-bench"
+license: MIT
+version: 1.0.0
+keywords:
+  - astronomy
+  - transients
+  - explainable AI
+  - benchmark
+  - deep learning
+abstract: >-
+  An open benchmark that evaluates the quality of machine-learning explanations
+  along five complementary axes -- perturbation-based faithfulness,
+  deletion/insertion AUC, complexity, cross-representation plausibility, and the
+  model- and data-randomisation sanity checks -- for classifiers of
+  astronomical transients on the PLAsTiCC dataset.
+preferred-citation:
+  type: article
+  title: "A Quantitative Benchmark for Explainable AI in Astronomical Transient Classification"
+  authors:
+    - family-names: Pagliaro
+      given-names: Antonio
+      affiliation: "INAF -- Istituto di Astrofisica Spaziale e Fisica Cosmica, Palermo, Italy"
+  journal: "Astronomy & Astrophysics"
+  year: 2026
+  # doi: "10.1051/0004-6361/..."   # TODO: add once the paper DOI is assigned

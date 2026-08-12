@@ -4,13 +4,13 @@ build-backend = "hatchling.build"
 
 [project]
 name = "astro-xai-bench"
-version = "0.1.0"
+version = "1.0.0"
 description = "Benchmark framework for astronomical transient classification with Explainable AI"
 readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
 authors = [
-    { name = "Your Name", email = "your@email.com" },
+    { name = "Antonio Pagliaro", email = "antonio.pagliaro@inaf.it" },
 ]
 keywords = ["astronomy", "transients", "deep-learning", "explainability", "benchmark"]
 classifiers = [
