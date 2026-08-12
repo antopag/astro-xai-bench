@@ -7,7 +7,7 @@ authors:
     given-names: Antonio
     affiliation: "INAF -- Istituto di Astrofisica Spaziale e Fisica Cosmica, Palermo, Italy"
     email: antonio.pagliaro@inaf.it
-    # orcid: "https://orcid.org/0000-0000-0000-0000"   # TODO: add before the Zenodo release
+    orcid: "https://orcid.org/0000-0002-6841-1362"
 repository-code: "https://github.com/antopag/astro-xai-bench"
 license: MIT
 version: 1.0.0
@@ -30,6 +30,7 @@ preferred-citation:
     - family-names: Pagliaro
       given-names: Antonio
       affiliation: "INAF -- Istituto di Astrofisica Spaziale e Fisica Cosmica, Palermo, Italy"
+      orcid: "https://orcid.org/0000-0002-6841-1362"
   journal: "Astronomy & Astrophysics"
   year: 2026
   # doi: "10.1051/0004-6361/..."   # TODO: add once the paper DOI is assigned
