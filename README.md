@@ -1,5 +1,8 @@
 # astro-xai-bench
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21901214.svg)](https://doi.org/10.5281/zenodo.21901214)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 Reproducible benchmark and open-source framework for astronomical transient classification with deep learning and Explainable AI (xAI).
 
 ## Overview
@@ -75,8 +78,12 @@ If you use this benchmark, please cite the paper and the archived software relea
 > Pagliaro, A. 2026, *A Quantitative Benchmark for Explainable AI in Astronomical
 > Transient Classification*, Astronomy & Astrophysics
 
-Machine-readable metadata is in [CITATION.cff](CITATION.cff). The versioned archive is on
-Zenodo (DOI to be added on release).
+Machine-readable metadata is in [CITATION.cff](CITATION.cff).
+
+On Zenodo, [10.5281/zenodo.21901215](https://doi.org/10.5281/zenodo.21901215) is the
+archive of `v1.0.0`, the version the paper reports;
+[10.5281/zenodo.21901214](https://doi.org/10.5281/zenodo.21901214) always resolves to the
+latest version.
 
 ## License
 

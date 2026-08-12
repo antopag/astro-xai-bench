@@ -11,6 +11,15 @@ authors:
 repository-code: "https://github.com/antopag/astro-xai-bench"
 license: MIT
 version: 1.0.0
+date-released: "2026-08-12"
+doi: "10.5281/zenodo.21901215"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.21901215"
+    description: "Archive of v1.0.0, the version reported in the paper."
+  - type: doi
+    value: "10.5281/zenodo.21901214"
+    description: "Concept DOI, always resolving to the latest version."
 keywords:
   - astronomy
   - transients
