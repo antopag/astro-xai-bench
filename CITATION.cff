@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-title: "astro-xai-bench: a quantitative benchmark for explainable AI in astronomical transient classification"
+title: "astro-xai-bench: a quantitative benchmark for explainable artificial intelligence in astronomical transient classification"
 message: "If you use this software, please cite both the software and the paper."
 type: software
 authors:
@@ -34,7 +34,7 @@ abstract: >-
   astronomical transients on the PLAsTiCC dataset.
 preferred-citation:
   type: article
-  title: "A Quantitative Benchmark for Explainable AI in Astronomical Transient Classification"
+  title: "A quantitative benchmark for explainable artificial intelligence in astronomical transient classification"
   authors:
     - family-names: Pagliaro
       given-names: Antonio

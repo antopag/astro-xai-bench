@@ -75,8 +75,8 @@ python scripts/recompute_plausibility.py      # all five seeds
 
 If you use this benchmark, please cite the paper and the archived software release:
 
-> Pagliaro, A. 2026, *A Quantitative Benchmark for Explainable AI in Astronomical
-> Transient Classification*, Astronomy & Astrophysics
+> Pagliaro, A. 2026, *A quantitative benchmark for explainable artificial
+> intelligence in astronomical transient classification*, Astronomy & Astrophysics
 
 Machine-readable metadata is in [CITATION.cff](CITATION.cff).
 

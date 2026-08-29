@@ -1,5 +1,5 @@
 {
-  "title": "astro-xai-bench: a quantitative benchmark for explainable AI in astronomical transient classification",
+  "title": "astro-xai-bench: a quantitative benchmark for explainable artificial intelligence in astronomical transient classification",
   "description": "<p>Open benchmark and framework accompanying Pagliaro (2026), <em>Astronomy &amp; Astrophysics</em>. It evaluates the quality of machine-learning explanations along five complementary axes &mdash; perturbation-based faithfulness, deletion/insertion AUC, complexity, cross-representation plausibility, and the model- and data-randomisation sanity checks of Adebayo et al. (2018) &mdash; for nine classifiers spanning tree-based, deep-learning and physics-informed architectures on the PLAsTiCC photometric transient dataset. Includes the evaluation pipelines, the expert feature mask, and <code>scripts/recompute_plausibility.py</code>, the reproducibility entry point for the plausibility results.</p>",
   "upload_type": "software",
   "license": "MIT",
