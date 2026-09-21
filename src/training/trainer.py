@@ -58,10 +58,17 @@ class Trainer:
         config: dict[str, Any],
         device: torch.device | None = None,
         seed: int | None = None,
+        restore_best: bool = False,
     ) -> None:
         if seed is not None:
             set_global_seed(seed)
         self.seed = seed
+        # If True, fit() reloads the weights of the epoch with the lowest
+        # validation loss before returning (off by default: the PLAsTiCC
+        # models of Paper I were trained without it).
+        self.restore_best = restore_best
+        self._best_state: dict | None = None
+        self._best_val = float("inf")
         self.model = model
         self.config = config
         self.device = device or torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -148,11 +155,18 @@ class Trainer:
                     f"val_acc={val_acc:.4f} | lr={lr:.2e} | {elapsed:.1f}s"
                 )
 
+            if self.restore_best and val_loss < self._best_val:
+                self._best_val = val_loss
+                self._best_state = {k: v.detach().clone() for k, v in self.model.state_dict().items()}
+
             # Early stopping
             if self.early_stopping(val_loss):
                 logger.info(f"Early stopping at epoch {epoch}")
                 break
 
+        if self.restore_best and self._best_state is not None:
+            self.model.load_state_dict(self._best_state)
+            logger.info(f"Restored best weights (val_loss={self._best_val:.4f})")
         return history
 
     @torch.no_grad()

@@ -31,3 +31,9 @@ scripts/_*
 
 # Overleaf export bundles
 *_overleaf.zip
+
+# paper-1 history, Drive only
+archive/
+
+# paper-2 manuscript (under review), Drive/Overleaf only
+paper2/
