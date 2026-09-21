@@ -105,7 +105,7 @@ def run_seed(seed: int, tr: dict, va: dict, te: dict) -> None:
         assert meta[name].shape[1] == len(basis[name]), (meta[name].shape, len(basis[name]))
         logger.info(f"seed {seed} {name}: {mets[name]}  meta {meta[name].shape}  ({time.time()-t0:.0f}s)")
 
-    # ---- deep models (CNN1D; LSTM added at revision, referee Q7)
+    # ---- deep models (CNN1D, LSTM)
     def ts(split):
         return torch.from_numpy(split["light_curves"][:, :, :, 0]).float()
     x_va_ts, x_te_ts = ts(va), ts(te)

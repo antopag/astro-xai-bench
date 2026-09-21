@@ -1,5 +1,5 @@
-"""Paper 2, second review Q8: do the projected-model results persist with other
-gradient-based explainers?  GradientSHAP and SmoothGrad (NoiseTunnel over IG)
+"""Paper 2: do the projected-model results persist with other gradient-based
+explainers?  GradientSHAP and SmoothGrad (NoiseTunnel over IG)
 on the paper-1 checkpoints, seed 42, the same 50 test objects as _pass2_meta,
 projected with the paper-1 projection, then calibrated raw and rank-standardised.
 
@@ -20,7 +20,7 @@ from captum.attr import GradientShap, IntegratedGradients, NoiseTunnel
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
-from scripts.paper2_review_analysis import MASK60, calibrate, harmonise, summary  # noqa: E402
+from scripts.paper2_calibration_extras import MASK60, calibrate, harmonise, summary  # noqa: E402
 from src.xai.plausibility import project_image_attribution, project_timeseries_attribution  # noqa: E402
 
 DATA = PROJECT_ROOT / "data" / "processed" / "plasticc"

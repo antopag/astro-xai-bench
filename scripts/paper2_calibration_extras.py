@@ -1,8 +1,8 @@
-"""Paper 2, revision analysis (referee questions), from cached attributions.
+"""Paper 2, extended calibration analyses from cached attributions.
 
 Adds to paper2_analysis.py / ztf_analysis.py:
   * exact (hypergeometric) chance level, no Monte Carlo -- and the MC error of
-    the 200-permutation estimator used in the first submission
+    a 200-permutation estimator
   * support-restricted null and ceiling ("support-aware rescaled score")
   * bootstrap CIs over test objects and seed spread for the rescaled score
   * alternative per-slot harmonisations: rank, rank on a held-out reference
@@ -10,7 +10,7 @@ Adds to paper2_analysis.py / ztf_analysis.py:
   * threshold-agnostic summary: mean rescaled score over p in [25, 90]
   * alternative binarisations: fixed k = K, global (dataset-level) percentile
 
-Writes paper2/review_tables.json.  Runs in minutes (vectorised).
+Writes paper2/calibration_extras.json.  Runs in minutes (vectorised).
 """
 from __future__ import annotations
 
@@ -301,8 +301,8 @@ def main():
                                     float(np.std([b["metrics"][m][k] for b in Z.values()])))
                                 for k in Z["seed_42"]["metrics"][m]} for m in Z["seed_42"]["metrics"]}
 
-    json.dump(R, open(OUT / "review_tables.json", "w"), indent=1, default=float)
-    print("written", OUT / "review_tables.json")
+    json.dump(R, open(OUT / "calibration_extras.json", "w"), indent=1, default=float)
+    print("written", OUT / "calibration_extras.json")
 
 
 if __name__ == "__main__":
